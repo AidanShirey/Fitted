@@ -56,6 +56,7 @@
 }
 
 .container {
+    padding: 10px;
     text-align: center;
     font-size: 18px;
  	height: 100%;
@@ -89,27 +90,27 @@ div{
                 <div class="row">
                     <div class="tabcolumn">
                         <a class="container">
-                            Hats
-                        </a>
-                    </div>
-                    <div class="tabcolumn">
-                        <a class="container">
-                            Tops
-                        </a>
-                    </div>
-                    <div class="tabcolumn">
-                        <a class="container">
-                            Bottoms
-                        </a>
-                    </div>
-                    <div class="tabcolumn">
-                        <a class="container">
                             Socks
                         </a>
                     </div>
                     <div class="tabcolumn">
                         <a class="container">
+                            Pants
+                        </a>
+                    </div>
+                    <div class="tabcolumn">
+                        <a class="container">
+                            Shirts
+                        </a>
+                    </div>
+                    <div class="tabcolumn">
+                        <a class="container">
                             Shoes
+                        </a>
+                    </div>
+                    <div class="tabcolumn">
+                        <a class="container">
+                            Hats
                         </a>
                     </div>
                     <div class="tabcolumn">
@@ -121,32 +122,32 @@ div{
                 <div class="row">
                     <div class="innercardcolumn">
                         <div class="uiinnercard">
-                            <a class="container">
-                                Card One
-                            </a>
+                            <img id="card1" src="Clothing/black-socks.png" class="container" onclick="addSocks('card1')">
+                                
+                            </img>
                         </div>  
                     </div>
                     <div class="innercardcolumn">
                         <div class="uiinnercard">
-                            <a class="container">
-                                Card Two
-                            </a>
+                            <img id="card2" src="Clothing/grey-socks.png" class="container" onclick="addSocks('card2')">
+                            
+                            </img>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="innercardcolumn">
                         <div class="uiinnercard">
-                            <a class="container">
-                                Card Three
-                            </a>
+                            <img id="card3" src="Clothing/white-socks.png" class="container" onclick="addSocks('card3')">
+                            
+                            </img>
                         </div>  
                     </div>
                     <div class="innercardcolumn">
                         <div class="uiinnercard">
-                            <a class="container">
-                                Card Four
-                            </a>
+                            <img id="card4" src="Clothing/green-socks.png" class="container" onclick="addSocks('card4')">
+                            
+                            </img>
                         </div>
                     </div>
                 </div>
@@ -154,9 +155,10 @@ div{
         </div>
         <div class="columnlayout">
             <div class="uioutercard">
-                <img src="Clothing/malemannequin.png" class="container"></img>
+                <img src="Clothing/malemannequin.png" class="container" id="outfitpreview"></img>
             </div>
         </div>
     </div>
 </body>
+<script src="fitted.js"></script>
 </html>
