@@ -64,6 +64,32 @@
  	overflow-wrap: break-word;
 }
 
+.headcontainer{
+    display:block;
+    height: 100%;
+ 	width: 100%;
+}
+
+.bodycontainer{
+    display:block;
+    height: 100%;
+ 	width: 100%;
+}
+
+.bottomcontainer{
+    position:relative;
+    top:-6px;
+    height: 100%;
+ 	width: 100%;
+}
+
+.sockcontainer{
+    position:relative;
+    top:-25px;
+    height: 100%;
+ 	width: 100%;
+}
+
 body{
 	background-color: burlywood;
 	font-family: Arial;
@@ -72,6 +98,7 @@ body{
 }
 
 div{
+    margin: 0px;
 	padding: 0px;
 }
 
@@ -94,8 +121,8 @@ div{
                         </a>
                     </div>
                     <div class="tabcolumn">
-                        <a id="pants" class="container" onclick="changeTab('pants')">
-                            Pants
+                        <a id="bottoms" class="container" onclick="changeTab('pants')">
+                            Bottoms
                         </a>
                     </div>
                     <div class="tabcolumn">
@@ -122,14 +149,14 @@ div{
                 <div class="row">
                     <div class="innercardcolumn">
                         <div class="uiinnercard">
-                            <img id="card1" src="Clothing/black-socks.png" class="container" onclick="addItem('card1')">
+                            <img id="card1" src="Clothing/black-socks-display.png" class="container" onclick="addItem('card1','socks')">
                                 
                             </img>
                         </div>  
                     </div>
                     <div class="innercardcolumn">
                         <div class="uiinnercard">
-                            <img id="card2" src="Clothing/grey-socks.png" class="container" onclick="addItem('card2')">
+                            <img id="card2" src="Clothing/grey-socks-display.png" class="container" onclick="addItem('card2','socks')">
                             
                             </img>
                         </div>
@@ -138,14 +165,14 @@ div{
                 <div class="row">
                     <div class="innercardcolumn">
                         <div class="uiinnercard">
-                            <img id="card3" src="Clothing/white-socks.png" class="container" onclick="addItem('card3')">
+                            <img id="card3" src="Clothing/white-socks-display.png" class="container" onclick="addItem('card3','socks')">
                             
                             </img>
                         </div>  
                     </div>
                     <div class="innercardcolumn">
                         <div class="uiinnercard">
-                            <img id="card4" src="Clothing/khaki-socks.png" class="container" onclick="addItem('card4')">
+                            <img id="card4" src="Clothing/sand-socks-display.png" class="container" onclick="addItem('card4','socks')">
                             
                             </img>
                         </div>
@@ -155,7 +182,10 @@ div{
         </div>
         <div class="columnlayout">
             <div class="uioutercard">
-                <img src="Clothing/malemannequin.png" class="container" id="outfitpreview"></img>
+                <img id="head-slot" class="headcontainer" src="Clothing/head.png"></img>
+                <img id="top-slot" class="bodycontainer" src="Clothing/white-shirt.png"> </img>
+                <img id="bottom-slot" class="bottomcontainer" src="Clothing/black-pants.png"> </img>
+                <img id="sock-slot" class="sockcontainer" src="Clothing/white-socks.png"> </img>
             </div>
         </div>
     </div>

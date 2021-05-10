@@ -1,7 +1,26 @@
-var fitpath = "";
-function addItem(cardid){
+function addItem(cardid,tabid){
     // Change Outfit Preview Window
-    document.getElementById("outfitpreview").setAttribute("src", document.getElementById(cardid).getAttribute("src"));
+    switch(tabid){
+        case "socks":
+            // Get the src path
+            var fitpath = document.getElementById(cardid).getAttribute("src");
+            fitpath = fitpath.split('-');
+            // Create new path to replace the current slot
+            var newpath = fitpath[0] + "-" + fitpath[1] + ".png";
+            // Replace src
+            document.getElementById("sock-slot").setAttribute("src", newpath);
+            break;
+        case "bottoms":
+            // Get the src path
+            var fitpath = document.getElementById(cardid).getAttribute("src");
+            fitpath = fitpath.split('-');
+            // Create new path to replace the current slot
+            var newpath = fitpath[0] + "-" + fitpath[1] + ".png";
+            // Replace src
+            document.getElementById("bottom-slot").setAttribute("src", newpath);
+            break;
+        case "":
+    }
 }
 
 function changeTab(tabid){
@@ -19,5 +38,6 @@ function changeTab(tabid){
             document.getElementById("card3").setAttribute("src","Clothing/green-pants.png");
             document.getElementById("card4").setAttribute("src","Clothing/blue-pants.png");
             break;
+        case "":
     }
 }
