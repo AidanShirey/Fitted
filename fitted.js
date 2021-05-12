@@ -64,5 +64,15 @@ function changeTab(tabid){
             document.getElementById("card4").setAttribute("src","Clothing/navy-dlshirt-display.png");
             document.getElementById("card4").setAttribute("onclick","addItem('card4', 'shirts')");
             break;
+        case "shoes":
+            document.getElementById("card1").setAttribute("src","Clothing/black-shirt-display.png");
+            document.getElementById("card1").setAttribute("onclick","addItem('card1', 'shirts')");
+            document.getElementById("card2").setAttribute("src","Clothing/grey-lshirt-display.png");
+            document.getElementById("card2").setAttribute("onclick","addItem('card2', 'shirts')");
+            document.getElementById("card3").setAttribute("src","Clothing/white-dshirt-display.png");
+            document.getElementById("card3").setAttribute("onclick","addItem('card3', 'shirts')");
+            document.getElementById("card4").setAttribute("src","Clothing/navy-dlshirt-display.png");
+            document.getElementById("card4").setAttribute("onclick","addItem('card4', 'shirts')");
+            break;
     }
 }
